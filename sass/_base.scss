@@ -39,6 +39,8 @@ Grey dark 3: #999
 $bp-largest: 75em; // 1200/16 = 75em
 $bp-large: 68.75em; // 1100/16 = 68.75em
 $bp-medium: 56.25em; //900./16 = 56.25em
+$bp-small: 37.5em; //600/16 = 37.5em
+$bp-smallest: 31.25rem; //500/16 = 31.25rem
 
 * {
   margin: 0;
@@ -57,6 +59,10 @@ html {
 
   @media only screen and (max-width: $bp-large) {
     font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 45%;
   }
 }
 
