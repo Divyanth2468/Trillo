@@ -135,6 +135,9 @@ body {
   flex-direction: column;
   align-items: center; }
 
+.in-active {
+  display: none; }
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem; }
@@ -212,6 +215,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .user-nav__user {
+      flex-direction: column;
+      justify-content: center; }
+      .user-nav__user-photo {
+        margin-right: 0; } }
   .user-nav__user-photo {
     height: 4rem;
     width: 4rem;
@@ -523,3 +532,25 @@ body {
   .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
