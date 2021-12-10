@@ -115,6 +115,17 @@
     align-items: center;
   }
 
+  &__user {
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      justify-content: center;
+
+      &-photo {
+        margin-right: 0;
+      }
+    }
+  }
+
   &__user-photo {
     height: 4rem;
     width: 4rem;
