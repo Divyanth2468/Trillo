@@ -1,13 +1,13 @@
-#Project Name
+# Project Name
 Trillo
 
-#Project Description
+# Project Description
 A all in one webpage to book hotels, flights, car deals and also tours to various places
 
-#Languages Used
+# Languages Used
 HTML
 CSS
 JS
 
-#Link
+# Link
 https://divyanth2468.github.io/Trillo/
